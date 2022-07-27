@@ -48,7 +48,7 @@ class Node{
         prev = this.head
         this.head = nextNode
       }
-          return prev
+        return prev
     }
     
   }
