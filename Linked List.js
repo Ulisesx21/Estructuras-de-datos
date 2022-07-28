@@ -51,4 +51,19 @@ class LinkedList {
         return prev
     }
 
+    arrToList(arr) {
+        for (let i = 0; i < arr.length; i++) {
+            let newNode = new Node(arr[i])
+            if (this.head === null) {
+                this.head = newNode;
+                this.tail = newNode;
+                this.length++
+            } else {
+                this.tail.next = newNode;
+                this.tail = newNode;
+                this.length++
+            }
+        }
+    }
+
 }
