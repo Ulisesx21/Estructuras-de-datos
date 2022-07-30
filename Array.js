@@ -44,9 +44,11 @@ class MiArray {
     }
 
     reverse() {
-        let a = []
+        let a = [];
+        let n = 0;
         for (let i = this.length - 1; i >= 0; i--) {
-            a.push(this.data[i])
+            a[n] = this.data[i]
+            n++
         }
         return a
     }
@@ -58,6 +60,14 @@ class MiArray {
             }
         }
         return false
+    }
+
+    print() {
+        let a = []
+        for (let i = 0; i < this.length; i++) {
+            a[i] = this.data[i]
+        }
+        return a
     }
 
 }
